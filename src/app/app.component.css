@@ -1,0 +1,12 @@
+.primera{
+    padding-top: 15px;
+}
+h1,h2,h3,p,button{
+    font-family: 'Poppins';
+}
+h2,p{
+    color: #E4E3E3;
+}
+.tit{
+    font-family: 'Fuzzy Bubbles';
+}
