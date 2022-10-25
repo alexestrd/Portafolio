@@ -10,3 +10,9 @@ h2,p{
 .tit{
     font-family: 'Fuzzy Bubbles';
 }
+.bx1{
+    margin-left: 20px;
+}
+.b1::before{
+    background-color: #676767;
+}
