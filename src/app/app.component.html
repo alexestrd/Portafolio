@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-dark ">
   <div class="d-flex container-fluid">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -12,21 +12,24 @@
         <div class="container-fluid">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Proyectos</a>
+              <a class="nav-link active" aria-current="page" href="#habilidades">Habilidades</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#proyectos">Proyectos</a>
+            </li>
+            <!-- <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Contacto</a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
     </div>
   </div>
 </nav>
-<section>
+<section id="inicio">
   <div class="primera container text-left" >
   <div class="row align-items-start">
     <div class="col">
@@ -59,8 +62,52 @@
   </div>
 </div>
 </section>
-<section>
+<section id="habilidades">
+  <div class="segunda container text-center">
+    <div class="row align-items-start">
+      <div class="col">
+        <br>
+        <br>
+        <h1>Habilidades</h1>
+        <br>
+        <h2>Lenguajes</h2>
+        <div class="icon">
+        <a href="#" class=""><img src="../assets/icons/icons8-html-5-96.png" alt="html"></a>
+        <a href="#" class=""><img src="../assets/icons/icons8-css3-96.png" alt="css"></a>
+        <a href="#" class="icon"><img src="../assets/icons/icons8-javascript-96.png" alt="javascript"></a>
+        <a href="#" class="icon"><img src="../assets/icons/icons8-logotipo-de-java-coffee-cup-96.png" alt="java" title="Java"></a>
+        </div>
+        <br>
+        <h2>Frameworks</h2>
+        <div class="icon">
+          <a href="#" class="icon"><img src="../assets/icons/icons8-angularjs-96.png" alt=""></a>
+          <a href="#" class="icon"><img src="../assets/icons/icons8-bootstrap-logo-96.png" alt=""></a>
+          <a href="#" class="icon"><img src="../assets/icons/icons8-sass-96.png" alt=""></a>
+        </div>
+        <br>
+        <h2>Tecnologías y Herramientas</h2>
+        <div class="icon">
+          <a href="#" class="icon"><img src="../assets/icons/icons8-git-96.png" alt=""></a>
+          <a href="#" class="icon"><img src="../assets/icons/icons8-github-96.png" alt=""></a>
+          <a href="#" class="icon"><img src="../assets/icons/icons8-ngp-96.png" alt=""></a>
+          <a href="#" class="icon"><img src="../assets/icons/icons8-bitbucket-is-a-web-based-version-control-repository-hosting-service-96.png" alt=""></a>
+          <a href="#" class="icon"><img src="../assets/icons/icons8-iteración-de-esprint-96.png" alt=""></a>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
 
+</section>
+<br><br><br><br><br>
+<section id="proyectos">
+  <div class="container text-center">
+    <div class="row">
+      <h1>Proyectos</h1>
+      <br>
+      <a href="#"><img src="../assets/icons/desarrollando.png" alt=""></a>
+    </div>
+  </div>
 </section>
 
 <router-outlet></router-outlet>

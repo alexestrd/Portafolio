@@ -16,3 +16,17 @@ h2,p{
 .b1::before{
     background-color: #676767;
 }
+
+.primera,segunda{
+    height: 100%;
+    width: 100%;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+html{
+    scroll-behavior: smooth;
+}
