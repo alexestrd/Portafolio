@@ -1,12 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
-body{
-    background-image:linear-gradient(rgba(5,7,12,0.85), rgba(5,7,12,0.85)), url(./assets/image/planeta-poligonal-low-poly_2560x1440_xtrafondos.com.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-}
-h1,h2,h3,li,a,lu{
-    color: #EDEDED;
-    
-}
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(
+      to bottom left,rgb(3, 139, 187) 0%, rgba(1, 13, 35) 25%, rgba(0, 0, 0, 1) 100%
+    );
+  }
+
+  :root {
+    --background-color: #010D23;
+    --text-color: #FFFFFF;
+    --primary-color: #038BBB;
+    --color-neon-cyan:       #00E5FF;
+    --color-neon-fuchsia:    #D500FF;
+    --color-neon-chartreuse: #76FF03
+  }
