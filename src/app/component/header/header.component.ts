@@ -16,4 +16,8 @@ export class HeaderComponent {
       navbar.classList.remove('scrolled');
     }
   }
+
+  toggleTheme() {
+    document.documentElement.classList.toggle('dark');
+  }
 }

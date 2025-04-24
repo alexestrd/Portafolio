@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
+import { TypewriterComponentComponent } from './typewriter-component/typewriter-component.component';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { HeaderComponent } from './component/header/header.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HeaderComponent
+    HeaderComponent,
+    TypewriterComponentComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

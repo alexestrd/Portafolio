@@ -1,0 +1,11 @@
+:host {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  
+  .cursor {
+    animation: blink 0.8s steps(1) infinite;
+  }
+  
+  @keyframes blink { 50% { opacity: 0; } }
+  

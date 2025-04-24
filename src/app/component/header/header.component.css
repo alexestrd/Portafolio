@@ -1,21 +1,71 @@
-.tit{
-    font-family: 'Fuzzy Bubbles';
-}
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 50px;
-    z-index: 1000;
-    background-color: transparent; /* Fondo completamente transparente al inicio */
-    transition: background-color 0.3s ease, backdrop-filter 0.3s ease; /* Transición suave */
+/* 1️⃣  Glass-morphism de la píldora */
+.glass {
+  background: linear-gradient(135deg, rgba(255,255,255,.12) 0%, rgba(255,255,255,.06) 100%);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 2.5rem;          /* extremos totalmente redondos */
+  height: 54px;                   /* igual al screenshot */
+  pointer-events: auto;           /* porque el padre .navbar lleva pointer-events:none */
 }
 
-.navbar.scrolled {
-    backdrop-filter: blur(10px); /* Difuminado del fondo */
-    background-color: rgba(0, 0, 0, 0.2); /* Fondo semitransparente al hacer scroll */
+/* navbar contenedor transparente para que solo la pill tenga fondo */
+.navbar {
+  background: transparent;
+  z-index: 1050;
+  pointer-events: none;           /* evita capturar clics fuera de la pill */
 }
-  
-  body {
-    padding-top: 70px; /* Ajusta el espacio para evitar que el contenido quede detrás de la navbar */
+
+/* efecto al hacer scroll → oscurecer un poco */
+.glass.scrolled {
+  background: rgba(0,0,0,.35);
+  border-color: rgba(255,255,255,.08);
+}
+
+/* 2️⃣  Enlaces */
+.nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  transition: opacity .2s;
+  &:hover { opacity: .7; }
+}
+
+.brand {
+  font-family: 'Fuzzy Bubbles', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1rem;
+}
+
+/* 4️⃣  Switch de tema (sun/moon icons opcionales) */
+.theme-switch {
+  position: relative;
+  width: 46px; height: 24px;
+  input { display: none; }
+  .slider{
+    position: absolute; inset: 0;
+    background: rgba(255,255,255,.25);
+    border-radius: 9999px;
+    transition: .3s;
+    &::before{
+      content:'';
+      position:absolute; inset:2px;
+      width:20px; height:20px;
+      background: url('/assets/icons/moon.svg') center/60% no-repeat, #ffc400;
+      border-radius: 50%;
+      transition: .3s;
+    }
   }
+  input:checked + .slider{
+    background: rgba(40,40,40,.9);
+    &::before{
+      transform: translateX(22px);
+      background: url('/assets/icons/sun.svg') center/60% no-repeat, #ffeb3b;
+    }
+  }
+}
+
+body{ padding-top: 5 0px; }
+
+.img-name{
+  width: 50px;
+}
+
