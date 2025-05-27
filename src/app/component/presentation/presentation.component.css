@@ -1,0 +1,29 @@
+.title{
+    font-family: 'Segoe UI', sans-serif;
+  font-size: 4rem;            /* ajusta según prefieras */
+  color: var(--primary-color);             /* color base del resplandor */
+  text-align: center;
+  /* varias sombras para crear halo y difuminado */
+  text-shadow:
+    0 0 4px  var(--primary-color),
+    0 0 8px  var(--primary-color),
+    0 0 16px var(--primary-color),
+    0 0 24px var(--primary-color),
+    0 0 32px var(--color-bg-dark);
+}
+h2,p{
+    color: #E4E3E3;
+}
+.profile-img {
+  border-radius: 50%;           /* Hace la imagen circular */
+  border: 8px solid #fff;       /* Marco blanco, puedes cambiar el color */
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2); /* Sombra para efecto flotante */
+  animation: float 3s ease-in-out infinite;
+  transition: box-shadow 0.3s;
+  background: #f8f9fa;          /* Fondo claro para el marco */
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-20px); }
+}

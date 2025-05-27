@@ -30,16 +30,3 @@ h2,p{
 html{
     scroll-behavior: smooth;
 }
-.title{
-    font-family: 'Segoe UI', sans-serif;
-  font-size: 4rem;            /* ajusta según prefieras */
-  color: var(--primary-color);             /* color base del resplandor */
-  text-align: center;
-  /* varias sombras para crear halo y difuminado */
-  text-shadow:
-    0 0 4px  var(--primary-color),
-    0 0 8px  var(--primary-color),
-    0 0 16px var(--primary-color),
-    0 0 24px var(--primary-color),
-    0 0 32px var(--color-bg-dark);
-}
