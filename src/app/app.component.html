@@ -1,47 +1,17 @@
 <app-header></app-header>
-<section id="presentation" class="mt-5 pt-5">
+<section id="presentation" class="mt-5 pt-5 mb-5">
   <app-presentation></app-presentation>
 </section>
-<section id="habilidades">
-  <div class="segunda container text-center">
-    <div class="row align-items-start">
-      <div class="col">
-        <br>
-        <br>
-        <h1>Habilidades</h1>
-        <br>
-        <h2>Lenguajes</h2>
-        <div class="icon">
-        <a href="#" class=""><img src="../assets/icons/icons8-html-5-96.png" alt="html"></a>
-        <a href="#" class=""><img src="../assets/icons/icons8-css3-96.png" alt="css"></a>
-        <a href="#" class="icon"><img src="../assets/icons/icons8-javascript-96.png" alt="javascript"></a>
-        <a href="#" class="icon"><img src="../assets/icons/icons8-logotipo-de-java-coffee-cup-96.png" alt="java" title="Java"></a>
-        </div>
-        <br>
-        <h2>Frameworks</h2>
-        <div class="icon">
-          <a href="#" class="icon"><img src="../assets/icons/icons8-angularjs-96.png" alt=""></a>
-          <a href="#" class="icon"><img src="../assets/icons/icons8-bootstrap-logo-96.png" alt=""></a>
-          <a href="#" class="icon"><img src="../assets/icons/icons8-sass-96.png" alt=""></a>
-        </div>
-        <br>
-        <h2>Tecnologías y Herramientas</h2>
-        <div class="icon">
-          <a href="#" class="icon"><img src="../assets/icons/icons8-git-96.png" alt=""></a>
-          <a href="#" class="icon"><img src="../assets/icons/icons8-github-96.png" alt=""></a>
-          <a href="#" class="icon"><img src="../assets/icons/icons8-ngp-96.png" alt=""></a>
-          <a href="#" class="icon"><img src="../assets/icons/icons8-bitbucket-is-a-web-based-version-control-repository-hosting-service-96.png" alt=""></a>
-          <a href="#" class="icon"><img src="../assets/icons/icons8-iteración-de-esprint-96.png" alt=""></a>
-        </div>
-        <br>
-      </div>
-    </div>
-  </div>
+<section id="habilidades" class="mt-5 mb-5" >
+  <div class=""><app-stack></app-stack></div>
+</section>
+<section id="experiencia" class="mt-5 mb-4">
+  <app-experience></app-experience>
+</section>
+<section id="proyectos" class="mt-5 mb-4">
+ <app-projects class="mt-5"></app-projects>
+</section>
 
-</section>
-<br><br><br><br><br>
-<section id="proyectos" class="mb-4">
- <app-projects></app-projects>
-</section>
+
 
 <router-outlet></router-outlet>

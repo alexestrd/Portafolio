@@ -7,6 +7,8 @@ import { HeaderComponent } from './component/header/header.component';
 import { TypewriterComponentComponent } from './typewriter-component/typewriter-component.component';
 import { PresentationComponent } from "./component/presentation/presentation.component";
 import { ProjectsComponent } from './component/projects/projects.component';
+import { StackComponent } from './components/stack/stack.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ProjectsComponent } from './component/projects/projects.component';
     HeaderComponent,
     TypewriterComponentComponent,
     PresentationComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    StackComponent,
+    ExperienceComponent
 ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,58 @@
+.experiencia-section {
+  color: #b0bec5;
+  background: transparent;
+}
+.main-title {
+  color: #00E5FF;
+  font-family: 'Orbitron', 'Montserrat', Arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-shadow: 0 0 12px #00e5ff88, 0 2px 8px #000a;
+  border-bottom: 2px solid #00E5FF;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+.experiencia-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.experiencia-card {
+  background: rgba(20, 30, 50, 0.7);
+  border-radius: 18px;
+  box-shadow: 0 0 24px 4px #00e5ff22;
+  padding: 2rem 1.5rem;
+  min-width: 320px;
+  max-width: 400px;
+  margin-bottom: 1.5rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.experiencia-card:hover {
+  box-shadow: 0 0 48px 8px #00e5ff55;
+  transform: translateY(-6px) scale(1.03);
+}
+.experiencia-card h2 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', 'Orbitron', Arial, sans-serif;
+  margin-bottom: 0.2rem;
+}
+.empresa {
+  color: #00E5FF;
+  font-weight: 700;
+}
+.periodo {
+  display: block;
+  color: #b0bec5;
+  font-size: 0.95rem;
+  margin-bottom: 0.7rem;
+}
+.experiencia-card ul {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+.experiencia-card li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}

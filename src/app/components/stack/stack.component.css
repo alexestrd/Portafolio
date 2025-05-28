@@ -1,0 +1,166 @@
+.segunda{
+    height: 100%;
+    width: 100%;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+
+
+h2 {
+  color: #b0bec5;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  font-family: 'Montserrat', 'Orbitron', Arial, sans-serif;
+  text-shadow: 0 0 6px #00e5ff33;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-18px); }
+}
+
+.icon img {
+     width: 64px;      /* Ajusta el tamaño según prefieras */
+  height: 64px;
+  object-fit: contain;
+  animation: float 3s ease-in-out infinite;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+/* .icon-bg-firebase {
+  border-radius: 50%;
+  box-shadow:
+    0 0 24px 8px #ffb300,
+    0 0 48px 16px #ff9100aa;
+  transition: box-shadow 0.2s, transform 0.2s;
+  background: transparent; 
+}
+.icon-bg-firebase:hover {
+  transform: scale(1.08);
+  box-shadow:
+    0 0 48px 16px #ffb300,
+    0 0 96px 32px #ff9100cc;
+}
+
+.icon-bg-typescript {
+    border-radius: 50%;
+  box-shadow:
+    0 0 24px 8px #1976d2,
+    0 0 48px 16px #00e5ff99;
+  transition: box-shadow 0.2s, transform 0.2s;
+  background: none;
+}
+.icon-bg-typescript:hover {
+  transform: scale(1.08);
+  box-shadow:
+    0 0 48px 16px #1976d2,
+    0 0 96px 32px #00e5ffcc;
+}
+.icon-bg-java {
+    border-radius: 50%;
+  box-shadow: 0 0 24px 8px #7f5fff, 0 0 48px 16px #304ffe99;
+  transition: box-shadow 0.2s, transform 0.2s;
+  background: none;
+}
+.icon-bg-java:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 48px 16px #7f5fff, 0 0 96px 32px #304ffecc;
+}
+
+.icon-bg-javascript {
+    border-radius: 50%;
+  box-shadow: 0 0 24px 8px #ffd600, 0 0 48px 16px #ffea00aa;
+  transition: box-shadow 0.2s, transform 0.2s;
+  background: none;
+}
+.icon-bg-javascript:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 48px 16px #ffd600, 0 0 96px 32px #ffea00cc;
+}
+
+.icon-bg-spring {
+    border-radius: 50%;
+  box-shadow: 0 0 24px 8px #76ff03, 0 0 48px 16px #00e67699;
+  transition: box-shadow 0.2s, transform 0.2s;
+  background: none;
+}
+.icon-bg-spring:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 48px 16px #76ff03, 0 0 96px 32px #00e676cc;
+}
+
+.icon-bg-angular {
+    border-radius: 50%;
+  box-shadow: 0 0 24px 8px #ff1744, 0 0 48px 16px #ff525299;
+  transition: box-shadow 0.2s, transform 0.2s;
+  background: none;
+}
+.icon-bg-angular:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 48px 16px #ff1744, 0 0 96px 32px #ff5252cc;
+}
+
+.icon-bg-bootstrap {
+    border-radius: 50%;
+  box-shadow: 0 0 24px 8px #7c4dff, 0 0 48px 16px #651fff99;
+  transition: box-shadow 0.2s, transform 0.2s;
+  background: none;
+}
+.icon-bg-bootstrap:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 48px 16px #7c4dff, 0 0 96px 32px #651fffcc;
+}
+
+.icon-bg-sass {
+    border-radius: 50%;
+  box-shadow: 0 0 24px 8px #ff4081, 0 0 48px 16px #f5005799;
+  transition: box-shadow 0.2s, transform 0.2s;
+  background: none;
+}
+.icon-bg-sass:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 48px 16px #ff4081, 0 0 96px 32px #f50057cc;
+}
+
+.icon-bg-sqlserver {
+    border-radius: 50%;
+  box-shadow: 0 0 24px 8px #e53935, 0 0 48px 16px #b71c1c99;
+  transition: box-shadow 0.2s, transform 0.2s;
+  background: none;
+}
+.icon-bg-sqlserver:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 48px 16px #e53935, 0 0 96px 32px #b71c1ccc;
+}
+
+.icon-bg-mongodb {
+    border-radius: 50%;
+  box-shadow: 0 0 24px 8px #00c853, 0 0 48px 16px #64dd1799;
+  transition: box-shadow 0.2s, transform 0.2s;
+  background: none;
+}
+.icon-bg-mongodb:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 48px 16px #00c853, 0 0 96px 32px #64dd17cc;
+}
+
+.icon-bg-mysql {
+    border-radius: 50%;
+  box-shadow: 0 0 24px 8px #039be5, 0 0 48px 16px #00b8d499;
+  transition: box-shadow 0.2s, transform 0.2s;
+  background: none;
+}
+.icon-bg-mysql:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 48px 16px #039be5, 0 0 96px 32px #00b8d4cc;
+} */
+
+/* Ya tienes .icon-bg-firebase y .icon-bg-typescript definidos, así que no los repito aquí */

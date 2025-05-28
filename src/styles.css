@@ -15,3 +15,18 @@ body {
     --color-neon-fuchsia:    #D500FF;
     --color-neon-chartreuse: #76FF03
   }
+
+  .main-title {
+  color: #00E5FF;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-family:'Orbitron', sans-serif;
+  text-shadow: 0 0 12px #00e5ff88, 0 2px 8px #000a;
+  text-transform: uppercase;
+  border-bottom: 2px solid #00E5FF;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+html {
+  scroll-padding-top: 64px; 
+}
