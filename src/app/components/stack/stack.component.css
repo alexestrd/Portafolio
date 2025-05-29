@@ -28,11 +28,29 @@ h2 {
 }
 
 .icon img {
-     width: 64px;      /* Ajusta el tamaño según prefieras */
+     width: 64px;      
   height: 64px;
   object-fit: contain;
   animation: float 3s ease-in-out infinite;
   transition: box-shadow 0.2s, transform 0.2s;
+}
+
+@media (max-width: 576px) {
+  .icon img {
+    width: 40px;
+    height: 40px;
+  }
+  .icon {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  .main-title {
+    font-size: 1.5rem;
+  }
 }
 
 /* .icon-bg-firebase {
@@ -163,4 +181,3 @@ h2 {
   box-shadow: 0 0 48px 16px #039be5, 0 0 96px 32px #00b8d4cc;
 } */
 
-/* Ya tienes .icon-bg-firebase y .icon-bg-typescript definidos, así que no los repito aquí */

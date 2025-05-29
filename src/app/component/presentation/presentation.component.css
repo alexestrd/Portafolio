@@ -68,3 +68,17 @@ h2,p{
 .line-spacing {
   line-height: 1.8; 
 }
+
+@media (max-width: 576px) {
+  .icon-bg {
+    width: 36px;
+    height: 36px;
+    padding: 4px;
+  }
+  .profile-img {
+    max-width: 220px !important;
+  }
+  .title {
+    font-size: 2.2rem;
+  }
+}
